@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Length Converter</string>
+    <string name="Title">Metric Conversion</string>
+    <string name="Hint">Measurement to Convert</string>
+    <string name="txtInToCe">Convert Inches to Centimeters</string>
+    <string name="txtCeToIn">Convert Centimeters to Inches</string>
+    <string name="txtButton">Convert Measurement</string>
+</resources>
