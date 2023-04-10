@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Length Converter</string>
-    <string name="Title">Metric Conversion</string>
-    <string name="Hint">Measurement to Convert</string>
-    <string name="txtInToCe">Convert Inches to Centimeters</string>
-    <string name="txtCeToIn">Convert Centimeters to Inches</string>
-    <string name="txtButton">Convert Measurement</string>
+    <string name="app_name">Currency Converter</string>
+    <string name="Title">$ Money Conversion $</string>
+    <string name="Hint">Currency to Convert</string>
+    <string name="txtInToCe">Convert Dollars to Euros</string>
+    <string name="txtCeToIn">Convert Euros to Dollars</string>
+    <string name="txtButton">Convert Currency</string>
 </resources>

@@ -15,34 +15,34 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val convertNum = findViewById<EditText>(R.id.txtConvertNumber)
-        val rbInToCm = findViewById<RadioButton>(R.id.txtradioButton1)
-        val rbCmToIn = findViewById<RadioButton>(R.id.radioButton2)
+        val rbDolToEuR = findViewById<RadioButton>(R.id.txtradioButton1)
+        val rbEuRToDol = findViewById<RadioButton>(R.id.radioButton2)
         val txtResult = findViewById<TextView>(R.id.txtButtonConvert)
         val convertIt = findViewById<Button>(R.id.txtbutton)
 
         convertIt.setOnClickListener{
             val tenth = DecimalFormat("#.#")
             var dblMeasure = convertNum.text.toString().toDouble()
-            val conversionRate = 2.54
+            val conversionRate = 0.92
             var convertMeasureNum: Double?
 
-            if (rbInToCm.isChecked) {
-                if (dblMeasure <= 72) {
+            if (rbDolToEuR.isChecked) {
+                if (dblMeasure <= 10000) {
                     convertMeasureNum = dblMeasure * conversionRate
-                    txtResult.text = tenth.format(convertMeasureNum) + " cm"
+                    txtResult.text = tenth.format(convertMeasureNum) + " Euros"
 
                 } else {
-                    Toast.makeText(this@MainActivity, "Inches must be less than 72.",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "Amount must be less than $10,000.",Toast.LENGTH_LONG).show()
                 }
 
             }
-            if (rbCmToIn.isChecked) {
-                if (dblMeasure <= 185) {
+            if (rbEuRToDol.isChecked) {
+                if (dblMeasure <= 10000) {
                     convertMeasureNum = dblMeasure / conversionRate
-                    txtResult.text = tenth.format(convertMeasureNum) + " in"
+                    txtResult.text = tenth.format(convertMeasureNum) + " Dollars"
 
                 } else {
-                    Toast.makeText(this@MainActivity, "Centimeters must be less than 185.",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "Amount must be less than $10,000.",Toast.LENGTH_LONG).show()
                 }
             }
         }

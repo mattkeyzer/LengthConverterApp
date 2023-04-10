@@ -8,11 +8,11 @@
 
     <TextView
         android:id="@+id/txtTitle"
-        android:layout_width="212dp"
-        android:layout_height="60dp"
+        android:layout_width="365dp"
+        android:layout_height="59dp"
         android:layout_marginTop="40dp"
         android:gravity="center_horizontal"
-        android:text="Metric Conversion"
+        android:text="$ Money Conversion $"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
